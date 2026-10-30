@@ -4,8 +4,8 @@ Este proyecto es un tablero web interactivo que hice con **Dash** y **Plotly** p
 
 - **Autor:** Diego Fernando Pulido Ballesteros
 - **Asignatura:** Aplicaciones 1 · Maestría en Inteligencia Artificial · Universidad de La Salle
-- **Aplicación en línea:** `<URL de Render>`
-- **Repositorio:** `<URL de GitHub>`
+- **Aplicación en línea:** <https://mortalidad-colombia-vzb6.onrender.com/>
+- **Repositorio:** <https://github.com/DiegoBallesterosP/Actividad4_WebInteractiva>
 
 ![Vista general](docs/screenshots/01_vista_general.png)
 
@@ -43,8 +43,8 @@ mortalidad_colombia/
 Para correrlo en local:
 
 ```bash
-git clone <URL de GitHub>
-cd mortalidad_colombia
+git clone https://github.com/DiegoBallesterosP/Actividad4_WebInteractiva.git
+cd Actividad4_WebInteractiva/mortalidad_colombia
 python -m venv .venv
 .venv\Scripts\activate          # en macOS / Linux: source .venv/bin/activate
 pip install -r requirements.txt
@@ -58,7 +58,7 @@ y luego se abre <http://127.0.0.1:8050> en el navegador.
 Publiqué la app en **Render** siguiendo estos pasos:
 
 1. Subí el proyecto a un repositorio público de GitHub.
-2. En [render.com](https://render.com) creé un **Web Service** conectado al repositorio.
+2. En [render.com](https://render.com) creé un **Web Service** conectado al repositorio, con `mortalidad_colombia` como **Root Directory**.
 3. Render toma la configuración del archivo `render.yaml`:
    - **Build:** `pip install -r requirements.txt`
    - **Start:** `gunicorn app:server --workers 2 --timeout 120`
